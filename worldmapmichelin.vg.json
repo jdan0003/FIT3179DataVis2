@@ -1,0 +1,31 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 1500,
+    "height": 600,
+    "projection": {"type": "equalEarth"},
+    "layer": [
+        {
+          "data":{
+            "url":"https://raw.githubusercontent.com/jdan0003/lab19/main/custom.geo.topo.json",
+            "format": {"type":"topojson", "feature": "custom.geo"}
+            },
+          "mark": {"type":"geoshape", "fill": "lightgrey", "stroke": "white"}
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/jdan0003/FIT3179WEEK10/main/all-michelin.csv"
+          },
+          "mark": {
+            "type": "circle",
+            "fillOpacity": 0.5,
+            "fill": "black",
+            "tooltip": {"content": "data"}
+          },
+          "encoding": {
+            "longitude": {"field": "longitude", "type": "quantitative"},
+            "latitude": {"field": "latitude", "type": "quantitative"},
+            "size": {"value": 10}
+          }
+        }
+    ]
+  }
