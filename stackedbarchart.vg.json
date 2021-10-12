@@ -1,0 +1,29 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 300,
+    "height": 1200,
+    "data": {
+      "url": "https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/all-michelin.csv"
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "stars", "type": "ordinal", "title": "Michelin Stars"},
+      "y": {"aggregate": "count", "type": "quantitative"},
+      "color": {
+        "field": "price",
+        "scale": {
+          "domain": [ "$$$$$", "$$$$", "$$$", "$$", "$","N/A"],
+          "range": [
+            "#810f7c",
+            "#8856a7",
+            "#8c96c6",
+            "#9ebcda",
+            "#bfd3e6",    
+            "#edf8fb"
+          ]
+        },
+        "title": "Price Category"
+      },
+      "order":{"field":"price","type":"ordinal"}
+    }
+  }

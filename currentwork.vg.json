@@ -1,0 +1,103 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jdan0003/FIT3179WEEK10/main/50%20best%20restaurants%20databaseall.csv",
+    "format": {"type": "csv", "parse": {"Year": "number"}}
+  },
+  "vconcat": [
+    {
+      "width": 1500,
+      "height": 600,
+      "projection": {"type": "equalEarth"},
+      "layer": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/custom.geo.topo.json",
+            "format": {"type": "topojson", "feature": "custom.geo"}
+          },
+          "mark": {"type": "geoshape", "fill": "lightgrey", "stroke": "white"}
+        },
+        {
+          "params": [
+            {
+              "name": "year_highlight",
+              "select": {"type": "point", "fields": ["Year"]},
+              "bind": "legend"
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "tooltip": {"content": "data"},
+            "stroke": "black",
+            "strokeWidth": 0.7
+          },
+          "encoding": {
+            "longitude": {"field": "Longitude", "type": "quantitative"},
+            "latitude": {"field": "Latitude", "type": "quantitative"},
+            "size": {
+              "field": "Ranking",
+              "type": "quantitative",
+              "scale": {
+                "type": "threshold",
+                "domain": [10, 20, 30, 40],
+                "range": [60, 150, 220, 350, 600]
+              },
+              "sort": "descending"
+            },
+            "color": {
+              "field": "Year",
+              "type": "ordinal",
+              "scale": {"domain": [2018, 2019], "range": ["#fd8d3c", "#6baed6"]}
+            },
+            "opacity": {
+              "condition": {"param": "year_highlight", "value": 0.6},
+              "value": 0
+            },
+            "tooltip": [
+              {"field": "Ranking", "type": "quantitative"},
+              {"field": "Year", "type": "ordinal"},
+              {"field": "Restaurant", "type": "nominal", "title": "Restaurant"},
+              {"field": "City", "type": "nominal"},
+              {"field": "Latitude", "type": "quantitative"},
+              {"field": "Longitude", "type": "quantitative"},
+              {
+                "field": "Stars",
+                "type": "quantitative",
+                "title": "Michelin Stars"
+              },
+              {"field": "Chef", "type": "nominal"},
+              {"field": "Website", "type": "nominal"},
+              {"field": "Menu", "type": "quantitative", "title": "Price"}
+            ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum['Ranking']== 1 || datum['Ranking']== 2 || datum['Ranking']== 3"
+            }
+          ],
+          "mark": {"type": "text", "dy": -20},
+          "encoding": {
+            "text": {"field": "Ranking", "type": "quantitative"},
+            "longitude": {"field": "Longitude", "type": "quantitative"},
+            "latitude": {"field": "Latitude", "type": "quantitative"},
+            "size": {"value": 15},
+            "color": {"value": "black"},
+            "opacity": {
+              "condition": {"param": "year_highlight", "value": 0.6},
+              "value": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {"field": "properties.name", "type": "nominal"},
+        "y": {"aggregate": "count", "type": "quantitative"}
+      }
+    }
+  ]
+}

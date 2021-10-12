@@ -1,0 +1,93 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/all-michelin.csv"
+    },
+    "hconcat": [
+        {
+            "width": 300,
+            "height": 1200,
+            "mark": "bar",
+            "encoding": {
+                "x": {
+                    "field": "stars",
+                    "type": "ordinal",
+                    "title": "Michelin Stars"
+                },
+                "y": {
+                    "aggregate": "count",
+                    "type": "quantitative",
+                    "title":"Number of Restaurants"
+                },
+                "color": {
+                    "field": "price",
+                    "scale": {
+                        "domain": [
+                            "$$$$$",
+                            "$$$$",
+                            "$$$",
+                            "$$",
+                            "$",
+                            "N/A"
+                        ],
+                        "range": [
+                            "#810f7c",
+                            "#8856a7",
+                            "#8c96c6",
+                            "#9ebcda",
+                            "#bfd3e6",
+                            "#edf8fb"
+                        ]
+                    },
+                    "title": "Price Category"
+                },
+                "order": {
+                    "field": "price",
+                    "type": "ordinal"
+                }
+            }
+        },
+        {
+            "width": 300,
+            "height": 1200,
+            "mark": "bar",
+            "encoding": {
+                "x": {
+                    "aggregate": "count",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "cuisine",
+                    "sort": "-x",
+                    "title":"Cuisine"
+                },
+                "color": {
+                    "field": "price",
+                    "scale": {
+                        "domain": [
+                            "$$$$$",
+                            "$$$$",
+                            "$$$",
+                            "$$",
+                            "$",
+                            "N/A"
+                        ],
+                        "range": [
+                            "#810f7c",
+                            "#8856a7",
+                            "#8c96c6",
+                            "#9ebcda",
+                            "#bfd3e6",
+                            "#edf8fb"
+                        ]
+                    },
+                    "title": "Price Category"
+                },
+                "order": {
+                    "field": "price",
+                    "type": "ordinal"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,121 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 1500,
+    "height": 600,
+    "projection": {"type": "equalEarth"},
+    "layer": [
+        {
+          "data":{
+            "url":"https://raw.githubusercontent.com/jdan0003/lab19/main/custom.geo.topo.json",
+            "format": {"type":"topojson", "feature": "custom.geo"}
+            },
+          "mark": {"type":"geoshape", "fill": "lightgrey", "stroke": "white"}
+        },
+        {
+          "data": {"url": "https://raw.githubusercontent.com/jdan0003/lab19/dd22e27311bb2d2b9b021818b4c710b121be5645/50%20best%20restaurants%20database.csv"},
+          "mark": {
+            "type": "circle",
+            "stroke": "black",
+            "strokeWidth": 0.75
+          },
+          "encoding": {
+            "longitude": {
+              "field": "Longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "Latitude",
+              "type": "quantitative"
+            },
+            "size": {
+              "field": "Ranking",
+              "type": "quantitative",
+              "scale": {
+                "type": "threshold",
+                "domain": [
+                  10,
+                  20,
+                  30,
+                  40
+                ],
+                "range": [
+                  60,
+                  150,
+                  220,
+                  350,
+                  600
+                ]
+              },
+              "legend": {
+                "format": ".1s"
+              },
+              "sort": "descending"
+            },
+            "color": {
+              "field": "Ranking",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  10,
+                  20,
+                  30,
+                  40
+                ],
+                "range": [
+                  "#feedde",
+                  "#fdbe85",
+                  "#fd8d3c",
+                  "#e6550d",
+                  "#a63603"
+                ]
+              },
+              "sort": "descending"
+            },
+            "tooltip": [
+              {
+                "field": "Ranking",
+                "type": "quantitative"
+              },
+              {
+                "field": "Year",
+                "type": "ordinal"
+              },
+              {
+                "field": "Restaurant",
+                "type": "nominal"
+              },
+              {
+                "field": "City",
+                "type": "nominal"
+              },
+              {
+                "field": "Latitude",
+                "type": "quantitative"
+              },
+              {
+                "field": "Longitude",
+                "type": "quantitative"
+              },
+              {
+                "field": "Stars",
+                "type": "quantitative",
+                "title": "Michelin Stars"
+              },
+              {
+                "field": "Chef",
+                "type": "nominal"
+              },
+              {
+                "field": "Website",
+                "type": "nominal"
+              },
+              {
+                "field": "Menu",
+                "type": "quantitative",
+                "title": "Price"
+              }
+            ]
+          }
+        }
+      ]
+    }

@@ -1,0 +1,186 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 1500,
+  "height": 600,
+  "params": [
+    {
+      "name": "zoom_level",
+      "value": 1600,
+      "bind": {
+        "input": "range",
+        "min": 1100,
+        "max": 3000,
+        "step": 100,
+        "name": "Zoom: "
+      }
+    },
+    {
+      "name": "center_to",
+      "value": [15, 48],
+      "bind": {
+        "input": "select",
+        "options": [[53, 10]],
+        "labels": ["Europe"],
+        "name": "Map Centre"
+      }
+    },
+    {
+      "name": "year_select",
+      "value": 2018,
+      "bind": {"input": "select", "options": [2018, 2019], "name": "Year"}
+    }
+  ],
+  "layer": [
+    {
+      "projection": {
+        "type": "equalEarth",
+        "center": {"expr": "center_to"},
+        "scale": {"expr": "zoom_level"}
+      },
+      "data": {
+        "url": "https://raw.githubusercontent.com/jdan0003/lab19/main/custom.geo.topo.json",
+        "format": {"type": "topojson", "feature": "custom.geo"}
+      },
+      "mark": {"type": "geoshape", "fill": "lightgrey", "stroke": "white"}
+    },
+    {
+      "projection": {
+        "type": "equalEarth",
+        "center": {"expr": "center_to"},
+        "scale": {"expr": "zoom_level"}
+      },
+      "data": {
+        "url": "https://raw.githubusercontent.com/jdan0003/FIT3179WEEK10/main/50%20best%20restaurants%20databaseall.csv",
+        "format": {"type": "csv", "parse": {"Year": "number"}}
+      },
+      "transform": [{"filter": "datum.Year == year_select"}],
+      "mark": {
+        "type": "circle",
+        "tooltip": {"content": "data"},
+        "stroke": "black",
+        "strokeWidth": 0.7
+      },
+      "encoding": {
+        "longitude": {"field": "Longitude", "type": "quantitative"},
+        "latitude": {"field": "Latitude", "type": "quantitative"},
+        "size": {"value":200
+        },
+        "color": {"value": "grey"},
+        "tooltip": [
+          {"field": "Ranking", "type": "quantitative"},
+          {"field": "Year", "type": "ordinal"},
+          {"field": "Restaurant", "type": "nominal", "title": "Restaurant"},
+          {"field": "City", "type": "nominal"},
+          {"field": "Latitude", "type": "quantitative"},
+          {"field": "Longitude", "type": "quantitative"},
+          {"field": "Stars", "type": "quantitative", "title": "Michelin Stars"},
+          {"field": "Chef", "type": "nominal"},
+          {"field": "Website", "type": "nominal"},
+          {"field": "Menu", "type": "quantitative", "title": "Price"}
+        ]
+      }
+    },
+    {
+      "projection": {
+        "type": "equalEarth",
+        "center": {"expr": "center_to"},
+        "scale": {"expr": "zoom_level"}
+      },
+      "data": {
+        "url": "https://raw.githubusercontent.com/jdan0003/FIT3179WEEK10/main/50%20best%20restaurants%20databaseall.csv",
+        "format": {"type": "csv", "parse": {"Year": "number"}}
+      },
+      "layer": [
+        {
+          "transform": [
+            {
+              "filter": "datum['Ranking']== 1"
+            },
+            {"filter": "datum.Year == year_select"}
+          ],
+          "mark": {
+            "type": "image",
+            "url": "https://raw.githubusercontent.com/jdan0003/FIT3179WEEK10/main/clipart2520671.png",
+            "width": 40,
+            "height": 40
+          },
+          "encoding": {
+            "longitude": {"field": "Longitude", "type": "quantitative"},
+            "latitude": {"field": "Latitude", "type": "quantitative"},
+            "tooltip": [
+          {"field": "Ranking", "type": "quantitative"},
+          {"field": "Year", "type": "ordinal"},
+          {"field": "Restaurant", "type": "nominal", "title": "Restaurant"},
+          {"field": "City", "type": "nominal"},
+          {"field": "Latitude", "type": "quantitative"},
+          {"field": "Longitude", "type": "quantitative"},
+          {"field": "Stars", "type": "quantitative", "title": "Michelin Stars"},
+          {"field": "Chef", "type": "nominal"},
+          {"field": "Website", "type": "nominal"},
+          {"field": "Menu", "type": "quantitative", "title": "Price"}
+        ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum['Ranking']== 2"
+            },
+            {"filter": "datum.Year == year_select"}
+          ],
+          "mark": {
+            "type": "image",
+            "url": "https://raw.githubusercontent.com/jdan0003/FIT3179WEEK10/894270ae582aefbdb6266fa806ec25934b4cb528/clipart1306724.png",
+            "width": 40,
+            "height": 40
+          },
+          "encoding": {
+            "longitude": {"field": "Longitude", "type": "quantitative"},
+            "latitude": {"field": "Latitude", "type": "quantitative"},"tooltip": [
+          {"field": "Ranking", "type": "quantitative"},
+          {"field": "Year", "type": "ordinal"},
+          {"field": "Restaurant", "type": "nominal", "title": "Restaurant"},
+          {"field": "City", "type": "nominal"},
+          {"field": "Latitude", "type": "quantitative"},
+          {"field": "Longitude", "type": "quantitative"},
+          {"field": "Stars", "type": "quantitative", "title": "Michelin Stars"},
+          {"field": "Chef", "type": "nominal"},
+          {"field": "Website", "type": "nominal"},
+          {"field": "Menu", "type": "quantitative", "title": "Price"}
+        ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum['Ranking']== 3"
+            },
+            {"filter": "datum.Year == year_select"}
+          ],
+          "mark": {
+            "type": "image",
+            "url": "https://raw.githubusercontent.com/jdan0003/FIT3179WEEK10/main/clipart642435.png",
+            "width": 40,
+            "height": 40
+          },
+          "encoding": {
+            "longitude": {"field": "Longitude", "type": "quantitative"},
+            "latitude": {"field": "Latitude", "type": "quantitative"},
+            "tooltip": [
+          {"field": "Ranking", "type": "quantitative"},
+          {"field": "Year", "type": "ordinal"},
+          {"field": "Restaurant", "type": "nominal", "title": "Restaurant"},
+          {"field": "City", "type": "nominal"},
+          {"field": "Latitude", "type": "quantitative"},
+          {"field": "Longitude", "type": "quantitative"},
+          {"field": "Stars", "type": "quantitative", "title": "Michelin Stars"},
+          {"field": "Chef", "type": "nominal"},
+          {"field": "Website", "type": "nominal"},
+          {"field": "Menu", "type": "quantitative", "title": "Price"}
+        ]
+          }
+        }
+      ]
+    }
+  ]
+}

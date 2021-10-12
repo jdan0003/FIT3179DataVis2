@@ -1,0 +1,51 @@
+﻿Year,Ranking,Name,City,Country,Latitude,Longitude,Points,Stars,Chef,Website,Menu,Currency
+2018,1,Osteria Francescana,Modena,Italy,44.6431,10.9341,50,NA,NA,NA,NA,NA
+2018,2,El Celler de Can Roca,Girona,Spain,41.9808,2.8187,49,NA,NA,NA,NA,NA
+2018,3,Mirazur,Menton,France,43.7747,7.5046,48,NA,NA,NA,NA,NA
+2018,4,Eleven Madison Park,New York,USA,40.7146,-74.0071,47,2,NA,https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/eleven-madison-park,NA,NA
+2018,5,Gaggan,Bangkok,Thailand,13.75,100.516,46,1,NA,https://guide.michelin.com/th/en/bangkok-region/bangkok/restaurant/gaggan,NA,NA
+2018,6,Central,Lima,Peru,-12.043,-77.028,45,NA,NA,NA,NA,NA
+2018,7,Maido,Lima,Peru,-12.043,-77.028,44,NA,Mitsuharu Tsumura and Cesar Choy,http://maido.pe/,349,PEN
+2018,8,Arpège,Paris,France,48.8569,2.3412,43,NA,NA,NA,NA,NA
+2018,9,Mugaritz,San Sebastian,Spain,43.3174,-1.9784,42,NA,NA,NA,NA,NA
+2018,10,Asador Etxebarri,Axpe,Spain,43.13,-2.583611,41,NA,NA,NA,NA,NA
+2018,11,Quintonil,Mexico City,Mexico,19.4285,-99.1277,40,NA,Jorge Vallejo,http://www.quintonil.com/en/,2400,MXN
+2018,12,Blue Hill at Stone Barns,Pocantico Hills,USA,41.094444,-73.835833,39,NA,NA,NA,NA,NA
+2018,13,Pujol,Mexico City,Mexico,19.4285,-99.1277,38,NA,NA,NA,NA,NA
+2018,14,Steirereck,Vienna,Austria,48.2025,16.3688,37,NA,NA,NA,NA,NA
+2018,15,White Rabbit,Moscow,Russia,55.752,37.615,36,NA,NA,NA,NA,NA
+2018,16,Piazza Duomo,Alba,Italy,44.6961,8.0341,35,NA,NA,NA,NA,NA
+2018,17,Den,Tokyo,Japan,35.6249,139.5856,34,NA,Zaiyu Hasegawa,http://www.jimbochoden.com/,17000,JPY
+2018,18,Disfrutar,Barcelona,Spain,41.3875,2.1684,33,NA,NA,NA,NA,NA
+2018,19,Geranium,Copenhagen,Denmark,55.675,12.565,32,2,Rasmus Kofoed,https://www.geranium.dk/en/,2800,DKK
+2018,20,Attica,Melbourne,Australia,-37.814,144.963,31,NA,NA,NA,NA,NA
+2018,21,Alain Ducasse au Plaza Athénée,Paris,France,48.8569,2.3412,30,3,Alain Ducasse with Romain Meder,https://www.dorchestercollection.com/en/paris/hotel-plaza-athenee/restaurants-bars/alain-ducasse-au-plaza-athenee/,395,EUR
+2018,22,Narisawa,Tokyo,Japan,35.6249,139.5856,29,NA,Yoshihiro Narisawa,http://www.narisawa-yoshihiro.com/,38500,JPY
+2018,23,Le Calandre,Rubano,Italy,45.433333,11.783333,28,NA,NA,NA,NA,NA
+2018,24,Ultraviolet by Paul Pairet,Shanghai,China,31.222,121.458,27,NA,NA,NA,NA,NA
+2018,25,Cosme,New York,USA,40.7146,-74.0071,26,NA,Daniela Soto-Innes,https://www.cosmenyc.com/,98,USD
+2018,26,Le Bernardin,New York,USA,40.7146,-74.0071,25,2,NA,https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/le-bernardin,NA,NA
+2018,27,Boragó,Santiago,Chile,-33.426,-70.566,24,NA,NA,NA,NA,NA
+2018,28,Odette,Singapore,Singapore,1.289,103.85,23,2,NA,https://guide.michelin.com/sg/en/singapore-region/singapore/restaurant/odette,NA,NA
+2018,29,Alléno Paris au Pavillon Ledoyen,Paris,France,48.8569,2.3412,22,NA,NA,NA,NA,NA
+2018,30,D.O.M.,São Paulo,Brazil,-23.547,-46.636,21,1,NA,https://guide.michelin.com/br/en/sao-paulo-region/sao-paulo/restaurant/d-o-m,NA,NA
+2018,31,Arzak,San Sebastian,Spain,43.3174,-1.9784,20,NA,NA,NA,NA,NA
+2018,32,Tickets,Barcelona,Spain,41.3875,2.1684,19,NA,NA,NA,NA,NA
+2018,33,The Clove Club,London,UK,51.5064,-0.1272,18,NA,NA,https://guide.michelin.com/gb/en/greater-london/shoreditch/restaurant/the-clove-club,NA,NA
+2018,34,Alinea,Chicago,USA,41.8843,-87.6324,17,2,NA,https://guide.michelin.com/us/en/illinois/chicago/restaurant/alinea,NA,NA
+2018,35,Maaemo,Oslo,Norway,59.912,10.746,16,2,NA,https://guide.michelin.com/no/en/oslo-region/oslo/restaurant/maaemo,NA,NA
+2018,36,Reale,Castel di Sangro,Italy,41.783333,14.1,15,NA,NA,NA,NA,NA
+2018,37,Restaurant Tim Raue,Berlin,Germany,52.5161,13.377,14,NA,NA,NA,NA,NA
+2018,38,Lyle's,London,UK,51.5064,-0.1272,13,NA,NA,https://guide.michelin.com/gb/en/greater-london/shoreditch/restaurant/lyle-s,NA,NA
+2018,39,Astrid y Gastón,Lima,Peru,-12.043,-77.028,12,NA,NA,NA,NA,NA
+2018,40,Septime,Paris,France,48.8569,2.3412,11,NA,NA,NA,NA,NA
+2018,41,Nihonryori RyuGin,Tokyo,Japan,35.6249,139.5856,10,NA,NA,NA,NA,NA
+2018,42,The Ledbury,London,UK,51.5064,-0.1272,9,NA,NA,NA,NA,NA
+2018,43,Azurmendi,Larrabetzu,Spain,43.261944,-2.794722,8,NA,NA,NA,NA,NA
+2018,44,Mikla,Istanbul,Turkey,41.013,28.949,7,NA,NA,NA,NA,NA
+2018,45,Dinner by Heston Blumenthal,London,UK,51.5064,-0.1272,6,1,NA,https://guide.michelin.com/gb/en/greater-london/hyde-park/restaurant/dinner-by-heston-blumenthal,NA,NA
+2018,46,Saison,San Francisco,USA,37.7771,-122.4196,5,1,NA,https://guide.michelin.com/us/en/california/san-francisco/restaurant/saison,NA,NA
+2018,47,Schloss Schauenstein,Fürstenau,Switzerland,46.716667,9.433333,4,NA,NA,NA,NA,NA
+2018,48,Hiša Franko,Kobarid,Slovenia,46.246436,13.578006,3,NA,NA,NA,NA,NA
+2018,49,Nahm,Bangkok,Thailand,13.75,100.516,2,NA,NA,https://guide.michelin.com/th/en/bangkok-region/bangkok/restaurant/nahm,NA,NA
+2018,50,The Test Kitchen,Cape Town,South Africa,-33.916,18.416,1,NA,NA,NA,NA,NA

@@ -1,0 +1,22 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-content {
+    width: 100%;
+    display: flex; /*makes it easy to align content*/
+    flex-direction: column; /*automatically centres everything once as its all in a column*/
+}
+
+#title {
+    text-align: center;
+}
+
+.sub-heading{
+    text-align: center;
+}
+
+.maps {
+    border: 5px solid white;
+    margin: 0 auto;
+}

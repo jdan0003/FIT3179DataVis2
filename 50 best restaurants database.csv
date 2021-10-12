@@ -1,0 +1,51 @@
+﻿Year,Ranking,Restaurant,City,Country,Latitude,Longitude,Points,Stars,Chef,Website,Menu,Currency
+2019,1,Mirazur        ,Menton,France,43.785882,7.527998,50,3,Mauro Colagreco,https://www.mirazur.fr/,320,EUR
+2019,2,Noma                                         ,Copenhagen,Denmark,55.683153,12.610426,49,2,René Redzepi,https://noma.dk/,2800,DKK
+2019,3,Etxebarri,Axpe,Spain,43.11587,-2.6006578,48,1,Victor Arguinzoniz,https://asadoretxebarri.com/,200,EUR
+2019,4,Gaggan Anand                 ,Bangkok,Thailand,13.73919,100.53744,47,NA,Gaggan Anand,https://gaggananand.com/,8000,THB
+2019,5,Geranium,Copenhagen,Denmark,55.703755,12.572072,46,3,Rasmus Kofoed,https://www.geranium.dk/en/,2800,DKK
+2019,6,Central,Lima,Peru,-12.0993,-77.065,45,NA,Virgilio Martínez and Pía León,https://www.centralrestaurante.com.pe/,480,PEN
+2019,7,Mugaritz,San Sebastian,Spain,43.314798,-1.974583,44,2,Andoni Luis Aduriz,https://www.mugaritz.com/,220,EUR
+2019,8,Arpège,Paris,France,48.855703,2.317101,43,3,Alain Passard,https://www.alain-passard.com/,420,EUR
+2019,9,Disfrutar,Barcelona,Spain,41.387762,2.153172,42,2,Mateu Casañas,http://www.disfrutarbarcelona.com/,195,EUR
+2019,10,Maido,Lima,Peru,-12.04318,-77.02824,41,NA,Mitsuharu Tsumura and Cesar Choy,http://maido.pe/,349,PEN
+2019,11,Den,Tokyo,Japan,35.670289,139.696816,40,NA,Zaiyu Hasegawa,http://www.jimbochoden.com/,17000,JPY
+2019,12,Pujol,Mexico City,Mexico,19.371422,-99.150344,39,NA,Enrique Olvera,https://www.pujol.com.mx/,2500,MXN
+2019,13,White Rabbit,Moscow,Russia,55.741469,37.615561,38,NA,Vladimir Mukhin,https://whiterabbitmoscow.ru/en/,11000,RUB
+2019,14,Azurmendi,Larrabetzu,Spain,43.26594,-2.8187452,37,3,Eneko Atxa,https://www.azurmendi.biz/,250,EUR
+2019,15,Septime,Paris,France,48.853604,2.380832,36,1,Bertrand Grébaut ,http://www.septime-charonne.fr/,95,EUR
+2019,16,Alain Ducasse au Plaza Athénée,Paris,France,48.866175,2.304268,35,3,Alain Ducasse with Romain Meder,https://www.dorchestercollection.com/en/paris/hotel-plaza-athenee/restaurants-bars/alain-ducasse-au-plaza-athenee/,395,EUR
+2019,17,Steirereck,Vienna,Austria,48.198674,16.348388,34,2,Heinz Reitbauer,https://www.steirereck.at/en/restaurant/,169,EUR
+2019,18,Odette,Singapore,Singapore,1.289739,103.851368,33,3,Julien Royer,https://www.odetterestaurant.com/,358,SGD
+2019,19,Twins Garden,Moscow,Russia,55.741469,37.615561,32,NA,Ivan and Sergey Berezutski,http://twinsgarden.ru/en/,8000,RUB
+2019,20,Tickets,Barcelona,Spain,41.375217,2.156968,31,1,Fran Agudo,https://elbarri.com/en/restaurant/tickets/,70,EUR
+2019,21,Frantzén,Stockholm,Sweden,59.333854,18.058519,30,3,Bjorn Frantzén,https://www.restaurantfrantzen.com/,3500,SEK
+2019,22,Narisawa,Tokyo,Japan,35.692709,139.699506,29,NA,Yoshihiro Narisawa,http://www.narisawa-yoshihiro.com/,38500,JPY
+2019,23,Cosme                  ,New York,USA,40.8332,-73.40832,28,NA,Daniela Soto-Innes,https://www.cosmenyc.com/,98,USD
+2019,24,Quintonil,Mexico City,Mexico,19.4308,-99.150344,27,NA,Jorge Vallejo,http://www.quintonil.com/en/,2400,MXN
+2019,25,Alléno Paris au Pavillon Ledoyen,Paris,France,48.866061,2.315677,26,3,Yannick Alléno,http://www.yannick-alleno.com/,395,EUR
+2019,26,Boragó,Santiago,Chile,-33.428532,-70.630133,25,NA,Rodolfo Guzmán,https://www.borago.cl/,85000,CLP
+2019,27,The Clove Club,London,UK,51.527045,-0.07915,24,1,Isaac McHale,https://thecloveclub.com/,145,GBP
+2019,28,Blue Hill at Stone Barns,Tarrytown,USA,41.10208,-73.8289,23,2,Dan Barber,https://www.bluehillfarm.com/,195,USD
+2019,29,Piazza Duomo,Alba,Italy,44.700554,8.035567,22,3,Enrico Crippa,https://www.piazzaduomoalba.it/it/,300,EUR
+2019,30,Elkano,Getaria,Spain,43.303043,-2.205062,21,1,Aitor Arregi with Pablo Vicari,https://www.restauranteelkano.com/,110,EUR
+2019,31,Le Calandre,Rubano,Italy,45.426347,11.790589,20,3,Massimiliano Alajmo,https://www.alajmo.it/it/sezione/le-calandre/le-calandre,240,EUR
+2019,32,Nerua Guggenheim Bilbao,Bilbao,Spain,43.258534,-2.937123,19,1,Josean Alija,https://www.neruaguggenheimbilbao.com/,148,EUR
+2019,33,Lyle's,London,UK,51.523764,-0.076932,18,1,James Lowe,https://www.lyleslondon.com/,65,GBP
+2019,34,Don Julio,Buenos Aires,Argentina,-34.5862,-58.4244,17,NA,Pablo Jesus Rivero with Guido Tassi,http://www.parrilladonjulio.com/,50,USD
+2019,35,Atelier Crenn,San Francisco,USA,37.79837,-122.436045,16,3,Dominique Crenn,https://www.ateliercrenn.com/,335,USD
+2019,36,Le Bernardin,New York,USA,40.761403,-73.981719,15,3,Eric Ripert,https://www.le-bernardin.com/,210,USD
+2019,37,Alinea                 ,Chicago,USA,41.913,-87.65,14,3,Grant Achatz with Simon Davies,https://www.alinearestaurant.com/,365,USD
+2019,38,Hiša Franko,Kobarid,Slovenia,46.247004,13.53643,13,2,Ana Roš,https://www.hisafranko.com/,175,EUR
+2019,39,A Casa do Porco,Sao Paulo,Brazil,-23.545,-46.646,12,0,Jefferson Rueda,https://acasadoporco.com.br/,139,BRL
+2019,40,Restaurant Tim Raue,Berlin,Germany,52.52045,13.40732,11,2,Tim Raue,https://tim-raue.com/,218,EUR
+2019,41,The Chairman,Hong Kong,Hong Kong,22.2846,114.1505,10,0,Kwok Keung Tung with Danny Yip,http://www.thechairmangroup.com/,700,HKD
+2019,42,Belcanto,Lisbon,Portugal,38.71001,-9.14143,9,2,José Avillez,https://belcanto.pt/index.php,185,EUR
+2019,43,Hof Van Cleve                  ,Kruisem,Belgium,50.90357,3.509568,8,3,Peter Goossens,https://hofvancleve.com/,345,EUR
+2019,44,The Test Kitchen,Cape Town,South Africa,-33.927582,18.457066,7,NA,Luke Dale-Roberts,https://www.thetestkitchen.co.za/,895,ZAR
+2019,45,Sühring,Bangkok,Thailand,13.7108,100.5432,6,2,Thomas and Mathias Sühring,http://restaurantsuhring.com/,5000,THB
+2019,46,De Librije,Zwolle,The Netherlands,52.515365,6.097879,5,3,Jonnie Boer,https://www.librije.com/,253,EUR
+2019,47,Benu                               ,San Francisco,USA,37.785436,-122.399214,4,3,Corey Lee,https://www.benusf.com/,325,USD
+2019,48,Ultraviolet,Shanghai,China,31.246027,121.472,3,3,Paul Pairet,https://uvbypp.cc/,600,USD
+2019,49,Leo,Bogotà,Colombia,4.60971,-74.08175,2,NA,Leonor Espinosa,http://www.restauranteleo.com/,100,USD
+2019,50,Schloss Schauenstein,Furstenau,Switzerland,46.722102,9.448301,1,3,Andreas Caminada,https://schauenstein.ch/,270,CHF
