@@ -9,7 +9,7 @@
         "value":"Austria",
         "bind": {
           "input": "select",
-          "options":["Austria", "Brazil", "China", "Croatia", "Czechia", "Denmark", "Faroe_Islands", "Greece","Hong_Kong_S.A.R.","Hungary","Ireland","Jersey","Macau_S.A.R.","Norway","Poland","Singapore","Sweden","South Korea","Taiwan","Thailand","United_Kingdom", "United_States"],
+          "options":["Austria", "Brazil", "China", "Croatia", "Czechia", "Denmark", "Faroe_Islands", "Greece","Hong_Kong_S.A.R.","Hungary","Ireland","Jersey","Macau_S.A.R.","Norway","Poland","Singapore","Sweden","South_Korea","Taiwan","Thailand","United_Kingdom", "United_States"],
           "labels":["Austria", "Brazil", "China", "Croatia", "Czechia", "Denmark", "Faroe Islands", "Greece","Hong Kong S.A.R.","Hungary","Ireland","Jersey","Macau S.A.R.","Norway","Poland","Singapore","Sweden","South Korea","Taiwan","Thailand","United Kingdom", "United States"],
           "name":"Select a Country"
         }
