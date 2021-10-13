@@ -1,33 +1,27 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 1500,
-    "height": 600,
+    "width": 800,
+    "height": 500,
     "params": [
       {
         "name": "zoom_level",
-        "value": 1600,
+        "value": 1200,
         "bind": {
           "input": "range",
-          "min": 1100,
-          "max": 2000,
+          "min": 1200,
+          "max": 2500,
           "step": 100,
           "name": "Zoom: "
         }
       },
       {
         "name": "center_to",
-        "value": [15, 48],
-        "bind": {
-          "input": "select",
-          "options": [[53, 10]],
-          "labels": ["Europe"],
-          "name": "Map Centre"
-        }
+        "value": [10, 48]
       },
       {
         "name": "year_select",
         "value": 2018,
-        "bind": {"input": "select", "options": [2018, 2019], "name": "Year"}
+        "bind": {"input": "select", "options": [2018, 2019], "name": "Year: "}
       }
     ],
     "layer": [
@@ -71,7 +65,9 @@
               "domain": [5, 10, 20, 30, 40],
               "range": [100, 200, 400, 800, 1600, 3200]
             },
-            "sort": "descending"
+            "sort": "descending",
+            "legend":null
+            
           },
           "color": {"value": "grey"},
           "tooltip": [

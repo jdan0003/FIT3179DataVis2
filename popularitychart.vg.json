@@ -1,0 +1,66 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Restaurant Popularity by Country",
+        "align": "center"
+    },
+    "width": 1000,
+    "data": {
+        "url": "https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/50%20best%20restaurants%20databaseall.csv",
+        "format": {
+            "type": "csv",
+            "parse": {
+                "Year": "number"
+            }
+        }},
+        "layer": [
+            {
+                "mark": "bar",
+                "encoding": {
+                    "x": {
+                        "field": "Country",
+                        "type": "nominal"
+                    },
+                    "y": {
+                        "aggregate": "count",
+                        "type": "quantitative"
+                    },
+                    "color": {
+                        "value": "grey"
+                    }
+                }
+            },
+            {
+                "mark": "line",
+                "encoding": {
+                    "x": {
+                        "field": "Country",
+                        "type": "nominal",
+                        "axis":{
+                            "labelFontSize":14,
+                            "labelAngle":-65
+                        },
+                        "title":null
+                    },
+                    "y": {
+                        "aggregate": "mean",
+                        "type": "quantitative",
+                        "field": "Points",
+                        "title":""
+                        
+                    },
+                    "tooltip": [
+                        {
+                            "field": "Country",
+                            "type": "nominal"
+                        },
+                        {
+                            "aggregate": "mean",
+                            "type": "quantitative",
+                            "field": "Points"
+                        }
+                    ]
+                }
+            }
+        ]
+    }

@@ -39,8 +39,8 @@
               "type": "quantitative",
               "scale": {
                 "type": "threshold",
-                "domain": [10, 20, 30, 40],
-                "range": [60, 150, 220, 350, 600]
+                "domain": [5, 10, 20, 30, 40],
+                "range": [60, 150, 220, 350, 600, 1200]
               },
               "sort": "descending"
             },
@@ -90,28 +90,6 @@
             }
           }
         }
-      ]
-    },
-    {
-      "layer": [
-        {
-          "mark": "bar",
-          "encoding": {
-            "x": {"field": "Country", "type": "nominal"},
-            "y": {"aggregate": "count", "type": "quantitative"},
-            "color": {"value": "grey"}
-          }
-        },
-        {
-          "mark": "line", 
-          "encoding": {
-            "x": {"field":"Country", "type":"nominal"},
-            "y": {"aggregate":"mean","type":"quantitative","field":"Points"},
-            "tooltip":[
-              {"field":"Country", "type":"nominal"},
-              {"aggregate":"mean","type":"quantitative","field":"Points"}
-              ]
-          }}
       ]
     }
   ]
