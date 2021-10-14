@@ -1,56 +1,124 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title":{"text":"Michelin Star Cuisine Distribution", "align": "center"},
-    "height": 300,
-    "width": 300,
-    "params":[
-      {
-        "name":"country_select",
-        "value":"Austria",
-        "bind": {
-          "input": "select",
-          "options":["Austria", "Brazil", "China", "Croatia", "Czechia", "Denmark", "Faroe_Islands", "Greece","Hong_Kong_S.A.R.","Hungary","Ireland","Jersey","Macau_S.A.R.","Norway","Poland","Singapore","Sweden","South_Korea","Taiwan","Thailand","United_Kingdom", "United_States"],
-          "labels":["Austria", "Brazil", "China", "Croatia", "Czechia", "Denmark", "Faroe Islands", "Greece","Hong Kong S.A.R.","Hungary","Ireland","Jersey","Macau S.A.R.","Norway","Poland","Singapore","Sweden","South Korea","Taiwan","Thailand","United Kingdom", "United States"],
-          "name":"Select a Country"
-        }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {"text": "Michelin Star Cuisine Distribution", "align": "center"},
+  "height": 300,
+  "width": 300,
+  "params": [
+    {
+      "name": "country_select",
+      "value": "Austria",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Austria",
+          "Brazil",
+          "China",
+          "Croatia",
+          "Czechia",
+          "Denmark",
+          "Faroe_Islands",
+          "Greece",
+          "Hong_Kong_S.A.R.",
+          "Hungary",
+          "Ireland",
+          "Jersey",
+          "Macau_S.A.R.",
+          "Norway",
+          "Poland",
+          "Singapore",
+          "Sweden",
+          "South_Korea",
+          "Taiwan",
+          "Thailand",
+          "United_Kingdom",
+          "United_States"
+        ],
+        "labels": [
+          "Austria",
+          "Brazil",
+          "China",
+          "Croatia",
+          "Czechia",
+          "Denmark",
+          "Faroe Islands",
+          "Greece",
+          "Hong Kong S.A.R.",
+          "Hungary",
+          "Ireland",
+          "Jersey",
+          "Macau S.A.R.",
+          "Norway",
+          "Poland",
+          "Singapore",
+          "Sweden",
+          "South Korea",
+          "Taiwan",
+          "Thailand",
+          "United Kingdom",
+          "United States"
+        ],
+        "name": "Select a Country: "
       }
-    ],
-    "data": {
-      "url": "https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/all-michelin_underscore.csv"
-    },
-    "layer": [
-      {"transform": [
-      {"filter":"datum.country == country_select"}
-    ],
-        "mark": {
-          "type": "arc",
-          "innerRadius": 80,
-          "tooltip": {"content": "data"}
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/all-michelin_underscore.csv"
+  },
+  "layer": [
+    {
+      "transform": [
+        {"filter": "datum.country == country_select"},
+        {
+          "aggregate": [
+            {"op": "count", "field": "cuisine", "as": "cuisineCount"}
+          ],
+          "groupby": ["cuisine"]
         },
-        "encoding": {
-          "theta": {"aggregate": "count", "type": "quantitative"},
-          "color": {"field": "cuisine", "type": "nominal", "title":"Cuisine"},
-          "tooltip": [
-            {"aggregate": "count", "field": "cuisine", "title":"Total Restaurants"},
-            {"field": "cuisine", "type": "nominal", "title":"Cuisine"}
-          ]
+        {
+          "window": [{"op": "rank","field":"cuisineCount", "as": "cuisineRank"}],
+          "sort": [{"field": "cuisineCount", "order": "descending"}]
+        },
+        {
+          "calculate":"datum.cuisineRank < 10 ? datum.cuisine : 'Other'","as":"abc"
         }
+      ],
+      "mark": {
+        "type": "arc",
+        "innerRadius": 80,
+        "tooltip": {"content": "data"}
       },
-      {
-        "data":{"url":"https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/flagicons.csv"},
-        "transform": [
-      {"filter":"datum.Country == country_select"}
-    ],
-        "mark": {
-          "type": "image",
-          "width": 100,
-          "height": 100
-        },
-        "encoding": {
-          "x":{"value":150},
-          "y":{"value":150},
-          "url":{"field":"Image", "type": "nominal"}
-        }
+      "encoding": {
+        "theta": {"field":"cuisineCount", "type": "quantitative"},
+        "color": {"field": "abc", "type": "nominal", "title": "Cuisine", "scale":{"scheme":"tableau20"}},
+        "tooltip": [
+          {
+            "field": "cuisineCount",
+            "title": "Total Restaurants"
+          },
+          {"field": "cuisine", "type": "nominal", "title": "Cuisine"},
+          {"field": "cuisineRank"}
+        ]
       }
-    ]
-  }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/flagicons.csv"
+      },
+      "transform": [{"filter": "datum.Country == country_select"}],
+      "mark": {"type": "image", "width": 100, "height": 100},
+      "encoding": {
+        "x": {"value": 150},
+        "y": {"value": 150},
+        "url": {"field": "Image", "type": "nominal"}
+      }
+    },
+    {
+      "mark": {"type": "point", "stroke": "lightgrey", "strokeWidth": 0.1},
+      "encoding": {
+        "x": {"value": 150},
+        "y": {"value": 150},
+        "size": {"value": 9800}
+      }
+    }
+  ]
+}

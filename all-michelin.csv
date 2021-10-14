@@ -61,9 +61,9 @@ Daniel,2019,2,40.7666,-73.96745,New York,New York City,10065,French,$$$$,https:/
 Aska,2019,2,40.71222,-73.96642,New York,New York City,11249,Scandinavian,$$$$,https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/aska,United States
 Blanca,2019,2,40.70492,-73.93354,New York,New York City,11206,Contemporary,$$$$,https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/blanca,United States
 Patrick Guilbaud,2019,2,53.33893,-6.25283,City Centre,Ireland,D2,Modern French,N/A,https://guide.michelin.com/ie/en/dublin/city-centre/restaurant/patrick-guilbaud,Ireland
-Oro,2019,2,-22.98601,-43.22471,Rio de Janeiro - 22441,Rio de Janeiro,15,creative,$$$$$,https://guide.michelin.com/br/en/rio-de-janeiro-region/rio-de-janeiro/restaurant/oro,Brazil
-Tuju,2019,2,-23.55653,-46.69083,São Paulo - 05416,Sao Paulo,1,creative,$$$$$,https://guide.michelin.com/br/en/sao-paulo-region/sao-paulo/restaurant/tuju,Brazil
-D.O.M.,2019,2,-23.56618,-46.66742,São Paulo - 01411,Sao Paulo,11,creative,$$$$$,https://guide.michelin.com/br/en/sao-paulo-region/sao-paulo/restaurant/d-o-m,Brazil
+Oro,2019,2,-22.98601,-43.22471,Rio de Janeiro - 22441,Rio de Janeiro,15,Creative,$$$$$,https://guide.michelin.com/br/en/rio-de-janeiro-region/rio-de-janeiro/restaurant/oro,Brazil
+Tuju,2019,2,-23.55653,-46.69083,São Paulo - 05416,Sao Paulo,1,Creative,$$$$$,https://guide.michelin.com/br/en/sao-paulo-region/sao-paulo/restaurant/tuju,Brazil
+D.O.M.,2019,2,-23.56618,-46.66742,São Paulo - 01411,Sao Paulo,11,Creative,$$$$$,https://guide.michelin.com/br/en/sao-paulo-region/sao-paulo/restaurant/d-o-m,Brazil
 Kojima,2019,2,37.52559,127.04193,Seoul,South Korea,N/A,Sushi,$$$$$,https://guide.michelin.com/kr/en/seoul-capital-area/kr-seoul/restaurant/kojima,South Korea
 Jungsik,2019,2,37.525585,127.04107,Seoul,South Korea,N/A,Korean contemporary,$$$,https://guide.michelin.com/kr/en/seoul-capital-area/kr-seoul/restaurant/jungsik511965,South Korea
 Kwonsooksoo,2019,2,37.526752,127.03571,Seoul,South Korea,N/A,Korean,$$$,https://guide.michelin.com/kr/en/seoul-capital-area/kr-seoul/restaurant/kwonsooksoo,South Korea
@@ -420,17 +420,17 @@ Heron & Grey,2019,1,53.30143,-6.177574,Blackrock,Ireland,N/A,Modern cuisine,N/A,
 Lady Helen,2019,1,52.526096,-7.188277,Baile Mhic Andáin/Thomastown,Ireland,N/A,Modern cuisine,N/A,https://guide.michelin.com/ie/en/kilkenny/baile-mhic-andain-thomastown/restaurant/lady-helen,Ireland
 House,2019,1,51.94777,-7.7135396,Aird Mhór/Ardmore,Ireland,N/A,Modern cuisine,N/A,https://guide.michelin.com/ie/en/waterford/aird-mhor-ardmore/restaurant/house,Ireland
 Olympe,2019,1,-22.96109,-43.20658,Rio de Janeiro - 22470,Rio de Janeiro,230,French,$$$$$,https://guide.michelin.com/br/en/rio-de-janeiro-region/rio-de-janeiro/restaurant/olympe,Brazil
-Lasai,2019,1,-22.95401,-43.19557,Rio de Janeiro - 22271,Rio de Janeiro,20,modern,$$$$$,https://guide.michelin.com/br/en/rio-de-janeiro-region/rio-de-janeiro/restaurant/lasai,Brazil
-Oteque,2019,1,-22.95747,-43.194424,Rio de Janeiro - 22271,Rio de Janeiro,20,modern,$$$$$,https://guide.michelin.com/br/en/rio-de-janeiro-region/rio-de-janeiro/restaurant/oteque,Brazil
+Lasai,2019,1,-22.95401,-43.19557,Rio de Janeiro - 22271,Rio de Janeiro,20,Modern,$$$$$,https://guide.michelin.com/br/en/rio-de-janeiro-region/rio-de-janeiro/restaurant/lasai,Brazil
+Oteque,2019,1,-22.95747,-43.194424,Rio de Janeiro - 22271,Rio de Janeiro,20,Modern,$$$$$,https://guide.michelin.com/br/en/rio-de-janeiro-region/rio-de-janeiro/restaurant/oteque,Brazil
 Mee,2019,1,-22.96764,-43.17925,Rio de Janeiro - 22021,Rio de Janeiro,1,Asian influences,$$$$$,https://guide.michelin.com/br/en/rio-de-janeiro-region/rio-de-janeiro/restaurant/mee,Brazil
 Cipriani,2019,1,-22.96755,-43.17901,Rio de Janeiro - 22021,Rio de Janeiro,1,Italian,$$$$$,https://guide.michelin.com/br/en/rio-de-janeiro-region/rio-de-janeiro/restaurant/cipriani,Brazil
 Jun Sakamoto,2019,1,-23.56318,-46.67737,São Paulo - 05413,Sao Paulo,0,Japanese,$$$$$,https://guide.michelin.com/br/en/sao-paulo-region/sao-paulo/restaurant/jun-sakamoto,Brazil
-Maní,2019,1,-23.56621,-46.67974,São Paulo - 05415,Sao Paulo,0,creative,$$$$$,https://guide.michelin.com/br/en/sao-paulo-region/sao-paulo/restaurant/mani,Brazil
-Evvai,2019,1,-23.567078,-46.679146,São Paulo - 05415,Sao Paulo,0,modern,$$$$$,https://guide.michelin.com/br/en/sao-paulo-region/sao-paulo/restaurant/evvai,Brazil
+Maní,2019,1,-23.56621,-46.67974,São Paulo - 05415,Sao Paulo,0,Creative,$$$$$,https://guide.michelin.com/br/en/sao-paulo-region/sao-paulo/restaurant/mani,Brazil
+Evvai,2019,1,-23.567078,-46.679146,São Paulo - 05415,Sao Paulo,0,Modern,$$$$$,https://guide.michelin.com/br/en/sao-paulo-region/sao-paulo/restaurant/evvai,Brazil
 Picchi,2019,1,-23.565063,-46.666767,São Paulo - 01426,Sao Paulo,1,Italian,$$$$$,https://guide.michelin.com/br/en/sao-paulo-region/sao-paulo/restaurant/picchi,Brazil
 Kosushi,2019,1,-23.58522,-46.6809,São Paulo - 04538,Sao Paulo,110,Japanese,$$$,https://guide.michelin.com/br/en/sao-paulo-region/sao-paulo/restaurant/kosushi,Brazil
 Ryo Gastronomia,2019,1,-23.58132,-46.6767,São Paulo - 04531,Sao Paulo,1,Japanese,$$$$$,https://guide.michelin.com/br/en/sao-paulo-region/sao-paulo/restaurant/ryo-gastronomia,Brazil
-Tangará Jean-Georges,2019,1,-23.634005,-46.72428,São Paulo - 05706,Sao Paulo,290,modern,$$$$$,https://guide.michelin.com/br/en/sao-paulo-region/sao-paulo/restaurant/tangara-jean-georges,Brazil
+Tangará Jean-Georges,2019,1,-23.634005,-46.72428,São Paulo - 05706,Sao Paulo,290,Modern,$$$$$,https://guide.michelin.com/br/en/sao-paulo-region/sao-paulo/restaurant/tangara-jean-georges,Brazil
 Kinoshita,2019,1,-23.59159,-46.67146,São Paulo - 04509,Sao Paulo,1,Japanese,$$$$$,https://guide.michelin.com/br/en/sao-paulo-region/sao-paulo/restaurant/kinoshita,Brazil
 Kan Suke,2019,1,-23.5684,-46.64936,São Paulo - 01401,Sao Paulo,0,Japanese,$$$$$,https://guide.michelin.com/br/en/sao-paulo-region/sao-paulo/restaurant/kan-suke,Brazil
 Huto,2019,1,-23.60882,-46.6598,São Paulo - 04080,Sao Paulo,4,Japanese,$$$$$,https://guide.michelin.com/br/en/sao-paulo-region/sao-paulo/restaurant/huto,Brazil
