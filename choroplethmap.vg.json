@@ -9,33 +9,33 @@
         "url": "https://raw.githubusercontent.com/jdan0003/lab19/main/custom.geo.topo.json",
         "format": {"type": "topojson", "feature": "custom.geo"}
       },
-      "mark": {"type":"geoshape", "fill": "lightgrey", "stroke": "white"}
+      "mark": {"type": "geoshape", "fill": "lightgrey", "stroke": "white"}
     },
     {
-       "data": {
-        "url": "https://raw.githubusercontent.com/jdan0003/lab19/main/custom.geo.topo.json",
+      "data": {
+        "url": "https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/custom.geo.topo.json",
         "format": {"type": "topojson", "feature": "custom.geo"}
-    },
-    "transform":[
-      {
-        "lookup": "properties.name",
-        "from": {
-          "data": {
-            "url": "https://raw.githubusercontent.com/jdan0003/FIT3179WEEK10/main/all-michelin.csv"
-          },
-          "key": "country",
-          "fields": ["stars"]
-        }
       },
-      {"calculate": "datum.stars + 0.1", "as":"Total Stars"}
-    ],
-    "mark":{"type":"geoshape", "tooltip":{"content":"data"}},
-    "encoding":{
-      "color":{
-        "field":"stars",
-        "type":"quantitative",
-        "scale":{"type":"log"}
-      }
+      "transform": [
+        {
+          "lookup": "properties.name",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/starCount.csv"
+            },
+            "key": "Country",
+            "fields": ["Country","totalStars", "averageStars"]
+          }
+        }
+      ],
+      "mark": {"type": "geoshape"},
+      "encoding": {
+        "color": {
+          "field": "averageStars",
+          "type": "quantitative",
+          "scale": {"type": "log"}
+        },
+        "tooltip": {"field": "Country"}
       }
     }
   ]
