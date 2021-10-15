@@ -6,7 +6,7 @@
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/jdan0003/lab19/main/custom.geo.topo.json",
+        "url": "https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/custom.geo.topo.json",
         "format": {"type": "topojson", "feature": "custom.geo"}
       },
       "mark": {"type": "geoshape", "fill": "lightgrey", "stroke": "white"}
@@ -24,7 +24,7 @@
               "url": "https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/starCount.csv"
             },
             "key": "Country",
-            "fields": ["Country","totalStars", "averageStars"]
+            "fields": ["Country","oneStar","twoStars","threeStars","totalStars", "averageStars"]
           }
         }
       ],
@@ -35,7 +35,13 @@
           "type": "quantitative",
           "scale": {"type": "log"}
         },
-        "tooltip": {"field": "Country"}
+        "tooltip": [
+          {"field": "Country", "type":"nominal"},
+          {"field": "oneStar", "type":"quantitative" , "title":"One Star"},
+          {"field": "twoStars", "type":"quantitative" , "title":"Two Stars"},
+          {"field": "threeStars", "type":"quantitative" , "title":"Three Stars"},
+          {"field": "averageStars", "type":"quantitative" , "title":"Average Stars"}
+        ]
       }
     }
   ]
