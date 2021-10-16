@@ -10,6 +10,16 @@
                 "Year": "number"
             }
         }},
+        "params": [
+            {
+              "name": "year_select",
+              "value": 2018,
+              "bind": {"input": "select", "options": [2018, 2019], "name": "Year:"}
+            }
+          ],
+        "transform": [
+            {"filter": "datum.Year == year_select"}
+        ],
         "layer": [
             {
                 "mark": "bar",
@@ -24,7 +34,24 @@
                     },
                     "color": {
                         "value": "#7b3a2b"
+                    },
+                    "tooltip":[{
+                        "field": "Country",
+                        "type": "nominal"
+                    },
+                    {
+                        "aggregate": "count",
+                        "type": "quantitative",
+                        "field": "Country",
+                        "title": "No. of Restaurants"
+                    },
+                    {
+                        "aggregate": "mean",
+                        "type": "quantitative",
+                        "field": "Points",
+                        "title": "Popularity Average"
                     }
+                    ]
                 }
             },
             {
@@ -52,9 +79,16 @@
                             "type": "nominal"
                         },
                         {
+                            "aggregate": "count",
+                            "type": "quantitative",
+                            "field": "Country",
+                            "title": "No. of Restaurants"
+                        },
+                        {
                             "aggregate": "mean",
                             "type": "quantitative",
-                            "field": "Points"
+                            "field": "Points",
+                            "title": "Popularity Average"
                         }
                     ],
                     "color":{"value":"#8286c5"}

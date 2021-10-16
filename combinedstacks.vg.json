@@ -13,7 +13,7 @@
         ],
     "hconcat": [
       {
-        "width": 300,
+        "width": 200,
         "height": 600,
         "title":"Price Distribution",
         "transform": [{"filter": "datum.price != 'N/A'"}],

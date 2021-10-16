@@ -93,12 +93,13 @@
         "theta": {"field":"cuisineCount", "type": "quantitative"},
         "color": {"field": "abc", "type": "nominal", "title": "Cuisine", "scale":{"scheme":"tableau20"}},
         "tooltip": [
+          {"field": "cuisine", "type": "nominal", "title": "Cuisine"},
+          {"field": "cuisineRank", "type":"quantitative", "title":"Cuisine Rank"},
           {
             "field": "cuisineCount",
             "title": "Total Restaurants"
-          },
-          {"field": "cuisine", "type": "nominal", "title": "Cuisine"},
-          {"field": "cuisineRank"}
+          }
+          
         ]
       }
     },
