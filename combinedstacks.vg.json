@@ -8,7 +8,7 @@
           {
             "name": "stars_select",
             "value":"All",
-            "bind":{"input": "select", "options":["All", 1,2,3], "name":"Michelin Stars"}
+            "bind":{"input": "select", "options":["All", 1,2,3], "name":"Michelin Stars:"}
           }
         ],
     "hconcat": [
