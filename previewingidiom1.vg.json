@@ -5,7 +5,7 @@
     "format": {"type": "csv", "parse": {"Year": "number", "Ranking": "number"}}
   },
   "width":"container",
-  "height":400,
+  "height":600,
   "projection": {"type": "equalEarth"},
   "params": [
     {
@@ -70,7 +70,6 @@
         },
         "tooltip": [
           {"field": "Ranking", "type": "quantitative"},
-          {"field": "Year", "type": "ordinal"},
           {"field": "Restaurant", "type": "nominal", "title": "Restaurant"},
           {"field": "City", "type": "nominal"},
           {"field": "Stars", "type": "quantitative", "title": "Michelin Stars"},

@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {"text": "Michelin Star Cuisine Distribution", "align": "center"},
-  "height": 300,
-  "width": 300,
+  "background":"#f6e1cb",
+  "height": 500,
+  "width": 500,
   "params": [
     {
       "name": "country_select",
@@ -109,16 +109,16 @@
       "transform": [{"filter": "datum.Country == country_select"}],
       "mark": {"type": "image", "width": 100, "height": 100},
       "encoding": {
-        "x": {"value": 150},
-        "y": {"value": 150},
+        "x": {"value": 250},
+        "y": {"value": 250},
         "url": {"field": "Image", "type": "nominal"}
       }
     },
     {
       "mark": {"type": "point", "stroke": "lightgrey", "strokeWidth": 0.1},
       "encoding": {
-        "x": {"value": 150},
-        "y": {"value": 150},
+        "x": {"value": 250},
+        "y": {"value": 250},
         "size": {"value": 9800}
       }
     }

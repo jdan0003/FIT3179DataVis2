@@ -36,7 +36,8 @@
                             <h2 id="world50heading">The World's Best 50 Restaurants</h2>
                             <div class="max-w-lg mr-14 ">
 
-                                <p>The World's 50 Best Restaurants reflects the diversity of the world's culinary
+                                <p class="text">The World's 50 Best Restaurants reflects the diversity of the world's
+                                    culinary
                                     landscape.
                                     Results of the top 50 Best Restaurants from 2018 and 2019 were awarded at the annual
                                     awards
@@ -150,34 +151,135 @@
 
             </div>
 
+            <div class="flex flex-row mx-10">
+                <div>
+                    <h1 class="chartTitle">Popularity Across Countries</h1>
+                    <div id="popularitychart" class="maps"></div>
+                </div>
+                <div>
+                    <P> ENTER SOME INTERESTING FACTS HERE</P>
+                </div>
+            </div>
 
-            <h1 class="chartTitle">Popularity of Country</h1>
-            <div id="popularitychart" class="maps"></div>
 
         </div>
 
     </div>
+    
     <div class="section">
-        <h2 id="michelinheading">Michelin Stars Across the World</h2>
-        <div class="flex flex-row">
-            <div class = 'mx-10'>
-                <p class="max-w-lg"> The MICHELIN Guide conveys its restaurant reviews through two to three-line short summaries and an extensive system of sumbols, the revered of which are its globally renowned MICHELIN stars.
-                    Michelin awards 0 - 3 stars on the basis of its anonymous reviews.</p>
-                <p class="max-w-lg"> The quality of a restaurant's food is based on the following criteria:</p> 
-                <p class="max-w-lg"> Quality of the ingredients used.</p> 
-                <p class="max-w-lg"> Mastry of the flavour and cooking techniques.</p> 
-                <p class="max-w-lg"> The personality of the chef in his cuisine.</p> 
-                <p class="max-w-lg"> Value for money.</p>
-                <p class="max-w-lg"> Consistency between visits.</p> </p>
+        <div id="main-content" class="mb-5 flex flex-row">
+            <h2 id="michelinheading">Michelin Stars Across the World</h2>
+            <div class="mx-10 border-b border-t border-indigo-600">
+                <h2 class="sub-heading">About Michelin Stars</h2>
             </div>
-            <div id="choroplethmap" class="maps w-full"></div>
+    
+            <div class="flex flex-row">
+                <div class='mx-10 '>
+                    <p class="max-w-lg my-5 text"> The <Span class='highlight'>MICHELIN Guide</Span> conveys its restaurant
+                        reviews through two to three-line
+                        short summaries and an extensive system of sumbols, the revered of which are its globally renowned
+                        <span class="highlight"> MICHELIN stars. </span>
+    
+                        Michelin awards 0 - 3 stars on the basis of its anonymous reviews.
+                    </p>
+                    <div class="text-box">
+                        <div class="border-b border-indigo-600 mb-5">
+                            <p class="max-w-lg mb-3 txtbox-title"> The quality of a restaurant's food is based on the
+                                following criteria:</p>
+                        </div>
+    
+                        <p class="max-w-lg mb-3 txtbox-text">1. <span class="txtbox-highlight">Quality</span> of the
+                            ingredients used</p>
+                        <p class="max-w-lg mb-3 txtbox-text">2. Mastery of the <span class='txtbox-highlight'>flavour and
+                                cooking techniques</span></p>
+                        <p class="max-w-lg mb-3 txtbox-text">3. The <span class='txtbox-highlight'>personality</span> of the
+                            chef in his cuisine</p>
+                        <p class="max-w-lg mb-3 txtbox-text">4. <span class='txtbox-highlight'>Value</span> for money</p>
+                        <p class="max-w-lg mb-2 txtbox-text">5. <span class='txtbox-highlight'>Consistency</span> between
+                            visits</p>
+                        </p>
+                    </div>
+    
+                </div>
+                <div class="w-full">
+                    <h2 class="chartTitle w-full"> Average Michelin Stars Across the World</h2>
+                    <div id="choroplethmap" class="maps w-full"></div>
+                </div>
+            </div>
+    
+            <div class="flex flex-row mx-10 mt-5">
+                    <div>
+                        <h2 class="chartTitleLeft">Michelin Star Cuisine Distribution</h2>
+                        <div id="donutchart" class="maps"></div>
+                    </div>
+                    <div class ="max-w-md mx-auto">
+                        <div class="border-b border-t border-indigo-600 mb-3">
+                            <h2 class="sub-heading text-center">What do the Stars mean?</h2>
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <div class = "text-center">
+                                <p class="text mb-2">Coveted by chefs, but bestowed upon only to an excellent few.
+                                    Getting a
+                                    star (or three) could change the fate of a restaurant.</p>
+                            </div>
+                            <div class="my-2">
+                                <img src="https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/michelin.png"
+                                    class="mx-2 mx-auto  mb-2" width="40">
+                                <div class = "text-center">
+                                    <p class="highlight"> High quality cooking, worth a stop!</p>
+                                    <p class='text'> A good place to stop on your journey, inditicating a very good
+                                        restaurant in its category, offering cuisine prepared to a consistently high
+                                        standard.</p>
+                                </div>
+    
+                            </div>
+                            <div class="my-2">
+                                <div class="flex flex-row mb-2 justify-center">
+                                    <img src="https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/michelin.png"
+                                        class="mx-2" width="40">
+                                    <img src="https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/michelin.png"
+                                        class="mx-2" width="40">
+                                </div>
+                                <div class = "text-center">
+                                    <p class="highlight"> Excellent cooking, worth a detour!</p>
+                                    <p class='text'> A restaurant worth a detour, indicating excellent cuisine and
+                                        skillfully and carefully crafted dishes of ourstanding quality.</p>
+                                </div>
+    
+                            </div>
+                            <div class="my-2">
+                                <div class="flex flex-row  mb-2  justify-center">
+                                    <img src="https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/michelin.png"
+                                        class="mx-2" width="40">
+                                    <img src="https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/michelin.png"
+                                        class="mx-2" width="40">
+                                    <img src="https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/michelin.png"
+                                        class="mx-2" width="40">
+                                </div>
+                                <div class = "text-center">
+                                    <p class="highlight"> Exceptional cuisine, worth a special journey!</p>
+                                    <P class='max-w-lg text'> A restaurant worth a special journey, indicating exceptional
+                                        cuisine where diners eat extremely well, often superbly. Distinctive dishes are
+                                        precisely executed, using superlative ingredients.</P>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+    
+            </div>
+            <div class='mb-5 mx-10 flex flex-row'>
+                <div>
+                    <h2 class="chartTitle">Michelin Star Price Distribution</h2>
+                    <div id="combinedstacks" class="maps"></div>
+                </div>
+                <div>
+                    <p>text text text text</p>
+                </div>
+            </div>
         </div>
-
-        <h2 class="sub-heading">Michelin Star Cuisine Distribution</h2>
-        <div id="donutchart" class="maps"></div>
-
-        <h2 class="sub-heading">Michelin Star Restaurants Around the World</h2>
-        <div id="combinedstacks" class="maps"></div>
+        
 
     </div>
 </body>

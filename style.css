@@ -13,7 +13,7 @@
     color:#7b3a2b;
     font-family: afterglow;
     font-size: 70px;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
@@ -30,14 +30,16 @@
     font-family: afterglow;
     font-size: 50px;
     text-align: center;
-    margin:15px
+    margin-top:15px
 }
 
 .sub-heading{
-    text-align: center;
-    color:#8286c5;
-    font-weight: bold;
-    font-size: 25px;
+    color: #8286c5;
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 10;
+    margin-left: 0;
+    font-family: afterglow;
 }
 
 .maps {
@@ -77,6 +79,14 @@
     font-weight:bold;
     
 }
+.chartTitleLeft{
+    color: #8286c5;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight:bold;
+    
+}
 
 .bestWorld{
     color: #8286c5;
@@ -104,4 +114,32 @@
 .hint{
     color: #8286c5;
     font-size: 20px;
+}
+
+.text-box{
+    background-color: #dbdcfc;
+    padding: 20px;
+}
+
+.txtbox-title{
+    color: #8286c5;
+    font-size: 18px;
+    font-weight: bold;
+}
+.txtbox-text{
+    color: #8286c5;
+    font-size: 18px;
+}
+.text{
+    color:#7b3a2b;
+}
+
+.highlight{
+    color:#7b3a2b;
+    font-weight: bold;
+}
+.txtbox-highlight {
+    color: #8286c5;
+    font-size: 18px;
+    font-weight: bold;
 }
