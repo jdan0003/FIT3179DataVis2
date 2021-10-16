@@ -4,8 +4,8 @@
     "url": "https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/50%20best%20restaurants%20databaseall.csv",
     "format": {"type": "csv", "parse": {"Year": "number", "Ranking": "number"}}
   },
-  "width": 1500,
-  "height": 600,
+  "width":"container",
+  "height":400,
   "projection": {"type": "equalEarth"},
   "params": [
     {
@@ -73,12 +73,9 @@
           {"field": "Year", "type": "ordinal"},
           {"field": "Restaurant", "type": "nominal", "title": "Restaurant"},
           {"field": "City", "type": "nominal"},
-          {"field": "Latitude", "type": "quantitative"},
-          {"field": "Longitude", "type": "quantitative"},
           {"field": "Stars", "type": "quantitative", "title": "Michelin Stars"},
           {"field": "Chef", "type": "nominal"},
-          {"field": "Website", "type": "nominal"},
-          {"field": "Menu", "type": "quantitative", "title": "Price"}
+          {"field": "Website", "type": "nominal"}
         ]
       }
     },

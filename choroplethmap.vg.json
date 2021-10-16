@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 1500,
+  "width": "container",
   "height": 600,
   "projection": {"type": "equalEarth"},
   "layer": [
@@ -33,7 +33,8 @@
         "color": {
           "field": "averageStars",
           "type": "quantitative",
-          "scale": {"type": "log"}
+          "scale": {"type": "log", "scheme":"bluepurple"},
+          "title":"Average Stars"
         },
         "tooltip": [
           {"field": "Country", "type":"nominal"},
