@@ -10,6 +10,11 @@
 
 #title {
     text-align: center;
+    color:#7b3a2b;
+    font-family: letterMagic;
+    font-size: 65px;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 
 .sub-heading{
@@ -20,3 +25,34 @@
     border: 5px solid white;
     margin: 0 auto;
 }
+
+.section {
+    background-color: #f6e1cb;
+    width: 80%;
+    display: flex;
+    flex-direction:column;
+    margin:0 auto;
+}
+
+#background {
+    background-color:#ffefe4;
+}
+
+.sub-box{
+    background-color:#c6d0f5;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;
+}
+@font-face {
+    font-family: letterMagic;
+    src: url("Letter\ Magic.ttf");
+}
+.chartTitle{
+    color: #9cabe0;
+    size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
