@@ -11,18 +11,36 @@
 #title {
     text-align: center;
     color:#7b3a2b;
-    font-family: letterMagic;
-    font-size: 65px;
+    font-family: afterglow;
+    font-size: 70px;
     margin-top: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+#world50heading{
+    color:#7b3a2b;
+    font-family: afterglow;
+    font-size: 25px;
+    margin-top: 22px;
+
+}
+
+#michelinheading{
+    color:#7b3a2b;
+    font-family: afterglow;
+    font-size: 50px;
+    text-align: center;
+    margin:15px
 }
 
 .sub-heading{
     text-align: center;
+    color:#8286c5;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .maps {
-    border: 5px solid white;
     margin: 0 auto;
 }
 
@@ -32,6 +50,8 @@
     display: flex;
     flex-direction:column;
     margin:0 auto;
+    margin-top: 20px;
+    margin-bottom:20px;
 }
 
 #background {
@@ -45,14 +65,43 @@
     padding: 15px;
 }
 @font-face {
-    font-family: letterMagic;
-    src: url("Letter\ Magic.ttf");
+    font-family: afterglow;
+    src: url("Afterglow-Regular.ttf");
 }
 .chartTitle{
-    color: #9cabe0;
-    size: 14px;
+    color: #8286c5;
+    font-size: 20px;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-weight:bold;
+    
 }
 
+.bestWorld{
+    color: #8286c5;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 40px;
+    font-family: afterglow;
+}
+
+.cropImage{
+    height:250px;
+    width: 2500px;
+    margin: 10px -500px -500px -210px;
+}
+.annotation{
+    color: #8286c5;
+    font-size: 20px;
+}
+
+.arrow{
+    margin: -100px 100px 10px 0px;
+}
+
+.hint{
+    color: #8286c5;
+    font-size: 20px;
+}
