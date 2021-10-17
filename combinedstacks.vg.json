@@ -1,103 +1,266 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "url": "https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/all-michelin.csv",
-      "format":{"type":"csv", "parse": {"stars":"number"}}
-    },
-    "params": [
-          {
-            "name": "stars_select",
-            "value":"All",
-            "bind":{"input": "select", "options":["All", 1,2,3], "name":"Michelin Stars:"}
-          }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jdan0003/FIT3179DataVis2/main/all-michelin.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "stars": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "stars_select",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All",
+          1,
+          2,
+          3
         ],
-    "hconcat": [
-      {
-        "width": 200,
-        "height": 600,
-        "title":"Price Distribution",
-        "transform": [{"filter": "datum.price != 'N/A'"}],
-        "mark": "bar",
-        "encoding": {
-          "x": {"field": "stars", "type": "ordinal", "title": "Michelin Stars"},
-          "y": {
-            "aggregate": "count",
-            "type": "quantitative",
-            "title": "No. of Restaurants"
-          },
-          "color": {
-            "field": "price",
-            "scale": {
-              "domain": ["$$$$$", "$$$$", "$$$", "$$", "$"],
-              "range": ["#810f7c", "#8856a7", "#8c96c6", "#bfd3e6", "#edf8fb"]
-            },
-            "title": "Price Category"
-          },
-          "order": {"field": "price", "type": "ordinal"},
-          "tooltip": [
-            {"field": "price", "title": "Price"},
-            {
-              "aggregate": "count",
-              "field": "cuisine",
-              "title": "No. of Restaurants"
-            }
-          ]
+        "name": "Michelin Stars:"
+      }
+    }
+  ],
+  "hconcat": [
+    {
+      "width": 200,
+      "height": 600,
+      "title": "Price Distribution",
+      "transform": [
+        {
+          "filter": "datum.price != 'N/A'"
         }
-      },
-      {
-        "width": 400,
-        "height": 600,
-        "title":"Top 10 Cuisines",
-        "transform": [
-          {"filter":"stars_select == 'All' ? datum : datum.stars == stars_select"},
-          {"filter": "datum.price != 'N/A'"},
-          {
-            "joinaggregate": [
-              {"op": "count", "field": "name", "as": "restaurantCount"}
-            ],
-            "groupby": ["cuisine"]
-          },
-          {
-            "window": [
-              {
-                "op": "dense_rank",
-                "field": "restaurantCount",
-                "as": "cuisineRank"
-              }
-            ],
-            "sort": [{"field": "restaurantCount", "order": "descending"}]
-          },
-          {"filter": "datum.cuisineRank <= 10"}
-        ],
-        "mark": "bar",
-        "encoding": {
-          "x": {
-            "aggregate": "count",
-            "field": "cuisine",
-            "type": "quantitative",
-            "title": "No. of Restaurants"
-          },
-          "y": {"field": "cuisine", "sort": "-x", "title": "Cuisine"},
-          "color": {
-            "field": "price",
-            "scale": {
-              "domain": ["$$$$$", "$$$$", "$$$", "$$", "$"],
-              "range": ["#810f7c", "#8856a7", "#8c96c6", "#bfd3e6", "#edf8fb"]
+      ],
+      "layer": [
+        {
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "field": "stars",
+              "type": "ordinal",
+              "title": "Michelin Stars"
             },
-            "title": "Price Category"
-          },
-          "order": {"field": "price", "type": "ordinal"},
-          "tooltip": [
-            {"field": "cuisineRank", "title": "Rank"},
-            {"field": "restaurantCount", "title": "No. of Restaurants"},
-            {"field": "price", "title": "Price"},
-            {
+            "y": {
               "aggregate": "count",
-              "field": "cuisine",
-              "title": "Restaurant by Price"
+              "type": "quantitative",
+              "title": "No. of Restaurants"
+            },
+            "color": {
+              "field": "price",
+              "scale": {
+                "domain": [
+                  "$$$$$",
+                  "$$$$",
+                  "$$$",
+                  "$$",
+                  "$"
+                ],
+                "range": [
+                  "#810f7c",
+                  "#8856a7",
+                  "#8c96c6",
+                  "#bfd3e6",
+                  "#edf8fb"
+                ]
+              },
+              "title": "Price Category"
+            },
+            "order": {
+              "field": "price",
+              "type": "ordinal"
+            },
+            "tooltip": [
+              {
+                "field": "price",
+                "title": "Price"
+              },
+              {
+                "aggregate": "count",
+                "field": "price",
+                "title": "No. of Restaurants"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "dy": 30
+          },
+          "encoding": {
+            "x": {
+              "field": "stars",
+              "type": "ordinal",
+              "title": "Michelin Stars"
+            },
+            "y": {
+              "aggregate": "count",
+              "type": "quantitative",
+              "title": "No. of Restaurants"
+            },
+            "text": {
+              "aggregate": "count",
+              "type": "quantitative",
+              "field": "stars"
+            },
+            "color": {
+              "value": "white"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "dy": 15,
+            "text": "Total"
+          },
+          "encoding": {
+            "x": {
+              "field": "stars",
+              "type": "ordinal",
+              "title": "Michelin Stars"
+            },
+            "y": {
+              "aggregate": "count",
+              "type": "quantitative",
+              "title": "No. of Restaurants"
+            },
+            "color": {
+              "value": "white"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "width": 400,
+      "height": 600,
+      "title": "Top 10 Cuisines",
+      "transform": [
+        {
+          "filter": "stars_select == 'All' ? datum : datum.stars == stars_select"
+        },
+        {
+          "filter": "datum.price != 'N/A'"
+        },
+        {
+          "joinaggregate": [
+            {
+              "op": "count",
+              "field": "name",
+              "as": "restaurantCount"
+            }
+          ],
+          "groupby": [
+            "cuisine"
+          ]
+        },
+        {
+          "window": [
+            {
+              "op": "dense_rank",
+              "field": "restaurantCount",
+              "as": "cuisineRank"
+            }
+          ],
+          "sort": [
+            {
+              "field": "restaurantCount",
+              "order": "descending"
             }
           ]
+        },
+        {
+          "filter": "datum.cuisineRank <= 10"
+        }
+      ],
+      "layer": [
+        {
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "aggregate": "count",
+              "field": "cuisine",
+              "type": "quantitative",
+              "title": "Total Restaurants"
+            },
+            "y": {
+              "field": "cuisine",
+              "sort": "-x",
+              "title": "Cuisine"
+            },
+            "color": {
+              "field": "price",
+              "scale": {
+                "domain": [
+                  "$$$$$",
+                  "$$$$",
+                  "$$$",
+                  "$$",
+                  "$"
+                ],
+                "range": [
+                  "#810f7c",
+                  "#8856a7",
+                  "#8c96c6",
+                  "#bfd3e6",
+                  "#edf8fb"
+                ]
+              },
+              "title": "Price Category"
+            },
+            "order": {
+              "field": "price",
+              "type": "ordinal"
+            },
+            "tooltip": [
+              {
+                "field": "cuisineRank",
+                "title": "Rank"
+              },
+              {
+                "field": "restaurantCount",
+                "title": "No. of Restaurants"
+              },
+              {
+                "field": "price",
+                "title": "Price"
+              },
+              {
+                "aggregate": "count",
+                "field": "cuisine",
+                "title": "No. Restaurant by Price"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {"type":"text", "dx":10},
+          "encoding": {
+            "x": {
+              "aggregate": "count",
+              "field": "cuisine",
+              "type": "quantitative",
+              "title": "Total Restaurants"
+            },
+            "y": {
+              "field": "cuisine",
+              "sort": "-x",
+              "title": "Cuisine"
+            },
+            "color":{"value":"black"},
+            "text":{
+              "aggregate":"count",
+              "field":"cuisine",
+              "type": "quantitative"
+            }
         }
       }
-    ]
-  }
+      ]
+    }
+  ]
+}
